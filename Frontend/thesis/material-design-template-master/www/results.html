@@ -1,0 +1,24 @@
+<html>
+  <head>
+<!--  jquery to get client's MAC Address for web app  -->
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.ajax({
+          url: 'http://localhost:8080/api/results/1',
+          type: 'GET',
+          dataType: 'json',
+          success: function() { alert('hello!'); },
+          error: function() { alert('boo!'); },
+        });
+      });
+
+    
+    </script>
+  </head>
+  <body>
+    <h1>Results</h1>
+  </body>
+</html>
+
+

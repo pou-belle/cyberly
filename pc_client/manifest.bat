@@ -1,4 +1,4 @@
-@echo off
+﻿
 
 javac Thesis.java
 

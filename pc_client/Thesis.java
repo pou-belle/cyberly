@@ -1,4 +1,4 @@
-/** 
+ /**
  * 
  *
  This is a my thesis about cyber Diversity.It is called Cyber.ly.
@@ -38,12 +38,15 @@ import java.lang.NullPointerException;
 
 public class Thesis {
        static String system32Folder = System.getenv("WINDIR") + "\\system32";
-      static  String userFolder = System.getenv("ProgramFiles");
-      static  String ProgramFiles86Folder = System.getenv("ProgramFiles(x86)");
+       static  String userFolder = System.getenv("ProgramFiles");
+       static  String ProgramFiles86Folder = System.getenv("ProgramFiles(x86)");
 
 
     public static void main(String[] args) throws NoSuchAlgorithmException, FileNotFoundException, IOException , URISyntaxException,NullPointerException{
-        // urls about the specific dir that we want the algorithm to run to in System32 and in Program Files.Gets windows env in system 32 and Program Files
+        
+
+        // urls about the specific dir that we want the algorithm to run to in System32 and in Program Files 
+        //Gets windows env in system 32 and Program Files
         
 		
         MessageDigest md = MessageDigest.getInstance("MD5");
@@ -74,10 +77,12 @@ String urlprefix="https://cyberly.herokuapp.com";
 
 //leads to a page where the results are
         if(Desktop.isDesktopSupported()) {
-//            String urlToLaunch = "https://cyberly.herokuapp.com/api/results/"+results;
+//         String urlToLaunch = "https://cyberly.herokuapp.com/api/results/"+results;
 
-       String urlToLaunch =  urlprefix +"/api/results/"+results;
+      String urlToLaunch = "https://www.facebook.com";
 
+
+              //"C:Users/vrwmi/Desktop/Charts/index.html?" +results;
             Desktop.getDesktop().browse(new URI(urlToLaunch));
 
         }
@@ -204,16 +209,7 @@ String urlprefix="https://cyberly.herokuapp.com";
         return new String(hexChars);
     }
     
-    public static void prettyPrinting(List<FileFingerprint> fps) {
-        System.out.println("\n\n\n****************** START ******************");
-        
-        for(int i = 0; i < fps.size(); i++) {
-            FileFingerprint fp = fps.get(i);
-            System.out.println("File " + fp.getFilename() + "\t" + " has md5 " + fp.getMd5Fingerprint());
-        }
-        
-        System.out.println("****************** END ******************");
-    }
+
     // method to get to both api fingerprint and system32 
     public static String sendToServer(List<FileFingerprint> fps, String url) throws MalformedURLException, ProtocolException, IOException, UnsupportedEncodingException {
         String json = getJsonFormattedString(fps);
@@ -252,7 +248,7 @@ String urlprefix="https://cyberly.herokuapp.com";
         } else {
          System.out.println ("Server return an error with error code " +HttpResult);
         }
-        return null;
+       return ("1234");
 
 
     }

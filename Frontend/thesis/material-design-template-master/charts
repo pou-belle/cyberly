@@ -1,0 +1,16 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/pie.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+  <link href="css/chartstyle.css" type="text/css" rel="stylesheet" >
+  </head>
+  <body>
+<div id="chartdiv"></div>					
+
+
+<script>
