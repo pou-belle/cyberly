@@ -9,8 +9,6 @@ var bodyParser = require('body-parser');
 var mongoose   = require('mongoose');
 
 
-var uristring = 'mongodb://cyberly_user:markella1@ds149431.mlab.com:49431/heroku_l1ghb699';
-//var uristring = 'mongodb://localhost:27017/cyberly_db';//locally 
 
 
 mongoose.connect(uristring, function (err, res) {
@@ -22,7 +20,7 @@ mongoose.connect(uristring, function (err, res) {
    }
 });
 
- // mongoose.connect('mongodb://localhost:27017/cyberly_db')
+)
 
 var Fingerprint = require('./app/models/fingerprint'); 
 var System32 = require('./app/models/system32');
@@ -213,19 +211,19 @@ router.route('/programfiles86')
  router.route('/results/system32/:userId').get(function(req, res) {
      getUserComparisonResults(req, res, System32, "System32", "system32");
      console.log(req.params.userId);
-     console.log("MARKELLA");
+    
     });
 
     router.route('/results/programfiles/:userId').get(function(req, res) {
          getUserComparisonResults(req, res, Fingerprint, "Program Files", "programfiles");
          console.log(req.params.userId);
-         console.log("MARKELLA");
+        
         });
 
  router.route('/results/programfiles86/:userId').get(function(req, res) {
          getUserComparisonResults(req, res, ProgramFiles86, "Program Files (x86)", "programfiles86");
          console.log(req.params.userId);
-         console.log("MARKELLA");
+      
         });
 
 function  getUserComparisonResults(req, res,  Model,  name,  nameid) {
