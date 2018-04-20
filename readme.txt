@@ -7,7 +7,9 @@ if multiple users own the same applications. Cyberdiversity as a term is based o
 Cyberdiverse computer systems could prove to be more resistant to potential attacks than systems that tend to monoculture.
 Monocultures can be characterized as a population that consists of identical members that belong to the same type. 
 In a monoculture, when a piece of malware manage to contaminate one member of the system, it can affect the rest of 
-it due to the fact that they all share the same vulnerabilities.The reason for me choosing the theme “Cyberdiversity in Information Systems” was the need to examine if the phenomenon of monoculture exists in information systemsand in what exend in software that we use today. 
+it due to the fact that they all share the same vulnerabilities.The reason for me choosing the theme “Cyberdiversity in 
+Information Systems” was the need to examine if the phenomenon of monoculture exists in informatin systems 
+and in what exend in software that we use today. 
 This thesis is supervised by  Dr. Vasileios Vlachos
 
 We do not keep track on any of our users' activity such as any type of documents, files and Internet activity. 
